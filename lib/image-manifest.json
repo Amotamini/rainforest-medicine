@@ -1,0 +1,154 @@
+{
+  "rainforest-banner": {
+    "src": "/images/processed/rainforest-banner.jpg",
+    "width": 2000,
+    "height": 1200,
+    "alt": "Sunlight filtering through the dense canopy of the upper-Amazon rainforest",
+    "section": "hero",
+    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABwAwCdASoUAAwAPt1cpkyopSOiMAgBEBuJYwAAQP6va5XjMAAA/vM0ADvAnRbapDdqw1fYPStyv4bq9Xpb7bKkDPeH1rbGdXt5Fv5AAAA="
+  },
+  "circle": {
+    "src": "/images/processed/circle.jpg",
+    "width": 1152,
+    "height": 510,
+    "alt": "Participants gathered in a candlelit ceremonial circle at night",
+    "section": "gathering",
+    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAwCdASoUAAkAPt1apkyopSOiMAgBEBuJYwC7ACHPdag4KWMgAP7xrVYyQtk7mRiAE47FZLKm/OlSV2TRhbJNnZbdjvk5jX5/2bgvy/O1xYWmgL8dX4AgAAA="
+  },
+  "circle-beach": {
+    "src": "/images/processed/circle-beach.jpg",
+    "width": 2200,
+    "height": 1467,
+    "alt": "A circle gathered on the beach at dusk where the rainforest meets the ocean",
+    "section": "gathering",
+    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQBACdASoUAA0APt1cpkyopSOiMAgBEBuJYwC7IE3J/gNmBgYMnRhnOAD+7NfMs4UzHVhTmcduhrZVS5KC2Vi/iJuOqAg9tVH97fIRV0gOprby/iSP+woNAAA="
+  },
+  "fb-ceremony": {
+    "src": "/images/processed/fb-ceremony.jpg",
+    "width": 1280,
+    "height": 960,
+    "alt": "A warm communal gathering inside the ceremonial space",
+    "section": "gathering",
+    "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADQAwCdASoUAA8APt1apkyopSOiMAgBEBuJZQC06BoY5x/gJXXLDNAA/vK4G5FEp31DVd5MujV2WPJNX6fm6Nnu2zJP9N8xMrVkiTq5/W4DQ7Yu91xFJemKHuVgxguOCjC9mOFEch138gAA"
+  },
+  "img5499": {
+    "src": "/images/processed/img5499.jpg",
+    "width": 800,
+    "height": 602,
+    "alt": "Secoya elders seated together inside the ceremonial lodge",
+    "section": "tradition",
+    "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADwAwCdASoUAA8APt1apkyopSOiMAgBEBuJZwC06CICbuwI5iCJxhEQAP7c9QdmErIg/OH5MrCaFDh2MsXvxBK21CjVdPZzk2yFVrq0MSxu+7O8gNBZX2pbhpgOB5rSGwkUfnnXxEnUAAAA"
+  },
+  "nov-2013": {
+    "src": "/images/processed/nov-2013.jpg",
+    "width": 2200,
+    "height": 1236,
+    "alt": "A Secoya elder beside Jonathon Miller Weisberger in traditional dress",
+    "section": "tradition",
+    "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACwAwCdASoUAAsAPt1cpkyopSOiMAgBEBuJQBOgAxttOkseW5FYAAD+6fWpQrg3e8zi/ITWxXTgenQDiOELZucN0qelmHgtOEEJM5a2cOXbhscrOOSsSVCZBQXqdTE3QrAC8t8QKTgAAA=="
+  },
+  "temple": {
+    "src": "/images/processed/temple.jpg",
+    "width": 1000,
+    "height": 750,
+    "alt": "The hand-built wooden ceremonial temple rising among the trees",
+    "section": "setting",
+    "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAwCdASoUAA8APt1cpkyopSOiMAgBEBuJZQAAM77zjJCxeAD+8SDOdNEysehqJsqCn+u/v6xmGoCD/M32re+hOviSXYHDET71mC9GDT7tllLnkttqCM8oEDEGLjURnTCGH+4AAAA="
+  },
+  "flowers-of-the-vine": {
+    "src": "/images/processed/flowers-of-the-vine.jpg",
+    "width": 2200,
+    "height": 1648,
+    "alt": "The pale flowers of the ayahuasca vine against deep forest green",
+    "section": "plants",
+    "blurDataURL": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAABQBACdASoUAA8APt1apkyopSOiMAgBEBuJYwAAXBXZ3VyYgUDSQMCw15AAAP70nHPAi2UROsZXsQ0t+elqeortgOlZEHOCYmVMvWwmGO1Pv+SjUMwBrM5rRgXR1vSsOXcN59jODG3hLEKWawz9EwH6fYju805ZYDa3sijl2AAAAA=="
+  },
+  "cacao": {
+    "src": "/images/processed/cacao.jpg",
+    "width": 1280,
+    "height": 960,
+    "alt": "Sacred plants and cacao prepared by hand for ceremony",
+    "section": "plants",
+    "blurDataURL": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQBACdASoUAA8APt1apkyopSOiMAgBEBuJQBOgBH6v7PqRnah8v9gk8AD+8YTLhfZ1Jown/FCXzZQHGPcPJDTl6Mho8dswWWn+peqP3N+Q4Zx0nAZLMme+ENCLjvRCnHBsNlctrno+4paFEQAAAA=="
+  },
+  "san-josecito-bay": {
+    "src": "/images/processed/san-josecito-bay.jpg",
+    "width": 2200,
+    "height": 1467,
+    "alt": "Aerial view of San Josecito Bay on the Osa Peninsula, Costa Rica",
+    "section": "setting",
+    "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQBACdASoUAA0APt1ep00opSOiMAgBEBuJYwCdG1/tv8B5ExXTG2JbiKkgAP7R8AZoJs0aWt0zHWYgk9fynZLekf+jQ1/7BvnuqISz3gYnzgu+5PzOQAAA"
+  },
+  "beach": {
+    "src": "/images/processed/beach.jpg",
+    "width": 1000,
+    "height": 750,
+    "alt": "The wild Pacific shoreline where the Osa rainforest meets the sea",
+    "section": "setting",
+    "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAwCdASoUAA8APt1cpkyopSOiMAgBEBuJZwAASluWOBQebLkyh4SAAP7xdB/snIukZSCw+hfo9dcaCtY6YziTfKDRiNXCP23jIX6EQAyGaxVlydCgAA=="
+  },
+  "lodge": {
+    "src": "/images/processed/lodge.jpg",
+    "width": 1000,
+    "height": 750,
+    "alt": "Open-air common space of the Ocean Forest Ecolodge hung with prayer flags",
+    "section": "setting",
+    "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwBACdASoUAA8APt1apkyopSOiMAgBEBuJYwCsACPtyl+ToHFWJGO+7wAA/vLXDaV3d1Zrftm8d8mDmb8cAgmZ6DJPITq002LXNcFQHEKI3Mz/p3sgAA=="
+  },
+  "hammock": {
+    "src": "/images/processed/hammock.jpg",
+    "width": 1000,
+    "height": 750,
+    "alt": "Hammocks on a wooden deck overlooking the rainforest",
+    "section": "setting",
+    "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAACwAwCdASoUAA8APt1cpkyopSOiMAgBEBuJZV2AUI8V7ggI8gxCAAD+8Fz4Oy9vPbK0MiGI7IVugoNUwi7b0rbA3lEE3Yi4qxxrRVgbGBDEnSFMlNabHIwG/u1pbos3QAA="
+  },
+  "room3": {
+    "src": "/images/processed/room3.jpg",
+    "width": 1000,
+    "height": 750,
+    "alt": "A simple, light-filled guest room opening onto the jungle",
+    "section": "setting",
+    "blurDataURL": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAwCdASoUAA8APt1apkyopSOiMAgBEBuJQBdmUABsMSbKyfPdnNnEAP7mBFN+OAc6d8wg+KsF+fD2JKmTCBIyo2a9qVh/e8m8sw6wX1CR++Hk2qZAp2a9v3bm45D23qyPAm7mYROhcCOS6AAAAA=="
+  },
+  "goddess-jacuzzi": {
+    "src": "/images/processed/goddess-jacuzzi.jpg",
+    "width": 2200,
+    "height": 1650,
+    "alt": "A natural stone pool fed by a forest spring",
+    "section": "setting",
+    "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQBACdASoUAA8APt1apkyopSOiMAgBEBuJZQAAXBvj0kxYoRkKi1aIAAD+8yQnFBfvC+RIkIXNkSxNZnnKCS3Wux/l/yBWNaTgJFUODypXhH1aSvQoAA=="
+  },
+  "sunset1": {
+    "src": "/images/processed/sunset1.jpg",
+    "width": 1000,
+    "height": 750,
+    "alt": "A vivid sunset over the Pacific off the Osa Peninsula",
+    "section": "intentions",
+    "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACwAwCdASoUAA8APt1cpkyopSOiMAgBEBuJZgCdACHDg0POssXWAAD+718sFO9uQ2zNUomgD53/0U5CQwNqUcXlZYCfHgV7GzylLrl4/Pg2r44UOzQSqV9WKb9Zn6hBwkmz8AAA"
+  },
+  "sunset2": {
+    "src": "/images/processed/sunset2.jpg",
+    "width": 1280,
+    "height": 960,
+    "alt": "Dusk light over the ocean and distant islands",
+    "section": "initiatives",
+    "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQBACdASoUAA8APt1apkyopSOiMAgBEBuJYgCdMoMxgEo4r/S58GQH1cSAAP7u6NnUXOgnByaLT4zXVTTtxUapQeQRjLg/MqLafrVSG7OP9umbCUfrZ3fjyt3Mpp6h7vFiNDVKPudYAAAA"
+  },
+  "jonathon-portrait": {
+    "src": "/images/processed/jonathon-portrait.jpg",
+    "width": 2200,
+    "height": 2502,
+    "alt": "Portrait of ethnobotanist and author Jonathon Sparrow Miller Weisberger",
+    "section": "founder",
+    "blurDataURL": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADQBACdASoUABcAPt1cpUyopSOiMBgMARAbiWUAw3AQ74KRz6jkkZnNEQpJJGS6AAD+9CVo593+1gg141eDGpTzzVp/3Uhs/0A+JOtXz6YywiUnZ8IzmqWbAn9aOHODaSTk6K+ib5/vmKu7f57PVo8ktOgAAA=="
+  },
+  "book-cover": {
+    "src": "/images/processed/book-cover.jpg",
+    "width": 269,
+    "height": 403,
+    "alt": "Cover of the book Rainforest Medicine by Jonathon Miller Weisberger",
+    "section": "book",
+    "blurDataURL": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4IMgAAABQBQCdASoUAB4APt1iqE4opaOiMBgIARAbiWQAnRH/6l4BdCSASaOy7sMw10Qek6dbsWAA/UhNutZuesWdrvedk/ul/jxu93zYgyhxT7Y54PE2WW2OShpoaPcdBLRcJ4FLcxLdc2s7IuKpi6HlefYm/RhC/zbZBjoojTmyzPJNg5eG2pNYYWSbjzAfhzY/ZyxTdIh5tI+QTyd/CBPhMDJeMRkP/SazD8Ku8MyTs/Mk9hTvOP2/oFM+MvmoCSRd5SJwFiqztSMAAA=="
+  }
+}

@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-night text-cream font-body antialiased;
+    font-feature-settings: "kern", "liga";
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(201, 162, 75, 0.28);
+    color: #f4ecd8;
+  }
+
+  /* Display serif renders best with a touch more weight on dark */
+  h1, h2, h3, h4 {
+    font-family: var(--font-display), "Cormorant Garamond", serif;
+    font-feature-settings: "kern", "liga", "dlig";
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #060a07;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1c2c22;
+    border-radius: 999px;
+    border: 2px solid #060a07;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2a4233;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* small letter-spaced label that recurs above headings */
+  .eyebrow {
+    @apply font-body text-[0.7rem] sm:text-xs uppercase tracking-eyebrow text-gold/80;
+  }
+
+  /* a thin, lit hairline that fades at both ends */
+  .gold-rule {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(201, 162, 75, 0.55),
+      transparent
+    );
+  }
+
+  .gold-rule-left {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(201, 162, 75, 0.6), transparent);
+  }
+
+  /* text that should never widow awkwardly */
+  .balance {
+    text-wrap: balance;
+  }
+
+  .pretty {
+    text-wrap: pretty;
+  }
+}
+
+/* Film grain over the whole surface — ties type sections to photo sections
+   into one nocturnal world. Matches the grain baked into the images. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.045;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+/* faint, fixed top-and-bottom darkening so content emerges from black */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 55;
+  pointer-events: none;
+  background:
+    linear-gradient(to bottom, rgba(3, 6, 4, 0.55), transparent 18%, transparent 82%, rgba(3, 6, 4, 0.7));
+}

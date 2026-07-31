@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Netlify's official Next.js runtime — handles SSR/ISR, next/image, and
+# next/font for the App Router. Installed automatically at build time.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

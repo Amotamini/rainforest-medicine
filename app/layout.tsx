@@ -49,6 +49,12 @@ export default function RootLayout({
     <html lang="en" className={`${display.variable} ${body.variable}`}>
       <body className="relative min-h-screen selection:bg-gold/20">
         {children}
+        <script
+          defer
+          src="https://redline-xi-ten.vercel.app/w.js"
+          data-redline="rainforest-medicine"
+          data-redline-name="Rainforest Medicine Gatherings"
+        />
       </body>
     </html>
   );

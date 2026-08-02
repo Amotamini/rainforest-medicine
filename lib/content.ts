@@ -7,22 +7,26 @@
 
 export const site = {
   name: "Rainforest Medicine Gatherings",
-  fullName: "Rainforest Medicine Council Gatherings",
+  fullName: "Rainforest Medicine Gatherings",
   email: "info@rainforestmedicine.net",
   location: "Ocean Forest Ecolodge · Osa Peninsula, Costa Rica",
   amazonUrl:
     "https://www.amazon.com/Rainforest-Medicine-Preserving-Indigenous-Biodiversity/dp/158394608X",
+  yageDrinkerPdf:
+    "https://rainforestmedicine.net/wp-content/uploads/2018/11/The-Yage-Drinker.pdf",
   conservationUrl: "https://www.4biodiversity.org/",
   guayusaUrl: "https://www.guayusatea.com/",
-  heroVideoId: "cLvIe3XVbc4",
+  spotifyShow: "https://open.spotify.com/show/3pDptpM8S7ZlBFNgG7qjRY",
+  youtubePlaylist: "https://www.youtube.com/playlist?list=PLF8zIucJH_rqJ-H0XS0OxLmbRV8uLJn2x",
+  heroVideoSrc: "", // empty = still image fallback. Set to an /videos/*.mp4 path when Ryan's film lands.
 };
 
 export const nav = [
+  { label: "Upcoming", href: "#upcoming" },
   { label: "The Gathering", href: "#gathering" },
-  { label: "The Lineage", href: "#lineage" },
-  { label: "The Book", href: "#book" },
+  { label: "The Tradition", href: "#lineage" },
   { label: "The Setting", href: "#setting" },
-  { label: "Gatherings", href: "#gatherings" },
+  { label: "The Book", href: "#book" },
 ];
 
 export const hero = {
@@ -30,7 +34,11 @@ export const hero = {
   title: "Rainforest Medicine Gatherings",
   subtitle:
     "Experiential ceremonial gatherings for personal, community and planetary renewal — held in the living plant-medicine traditions of the upper Amazon.",
-  cta: "Begin a conversation",
+  nextLabel: "Next gathering",
+  nextLine: "The Celestial Summer of the Cicadas · January 24 – 31, 2027 · Osa Peninsula, Costa Rica",
+  cta: "Reserve your place",
+  ctaHref: "#upcoming",
+  ctaSecondary: "See both gatherings",
 };
 
 export const invitation = {
@@ -49,7 +57,6 @@ export const gathering = {
     "We gather to learn and experience timeless rainforest plant-medicine traditions — held in accordance with the millenary, time-tested way of the “Multicolored People,” at a wilderness rainforest and oceanfront setting on Costa Rica's Osa Peninsula.",
     "The days hold ceremony and rest, the forest and the sea, simple natural meals, and the company of elders who carry this way of life. People come from across the world and leave as a community of ancient friends.",
   ],
-  note: "There are no tickets and no public roster. Participation begins with a conversation — write to us, and we'll share the current details and how to take part.",
 };
 
 export const lineage = {
@@ -111,6 +118,77 @@ export const setting = {
   ],
 };
 
+export const teachers = {
+  eyebrow: "The Teachers",
+  heading: "The people who carry this work",
+  intro:
+    "Gatherings are held by a small team who have been part of this work for years. Who is present varies from one gathering to the next \u2014 write to us and we will tell you who will be there for yours.",
+  list: [
+    {
+      name: "Scott Crawford",
+      role: "Group facilitator \u00b7 Aloha spirit",
+      bio: "On the plant-medicine path and a supporter of Jonathon's work since they became friends in 1993. A practitioner of Hawaiian cultural and spiritual traditions, knowledgeable in the medicinal and other uses of tropical plants, and a dedicated community organiser around food security, ocean management and land conservation. Scott serves the Rainforest Medicine Councils as a group facilitator \u2014 holding communication and scheduling, leading activities, meeting participants' needs, and helping in the ceremonies.",
+    },
+    {
+      name: "Bern Wisenberg",
+      role: "Group facilitator",
+      bio: "A peacemaker and energy guide in service of life. Bern joins gatherings as a people person and a facilitator, helping participants unpack and integrate the experience. He has long been drawn to the transcendental experience and its role in society.",
+    },
+    {
+      name: "Benjamin Mamallacta",
+      role: "Kichwa storyteller \u00b7 Rainforest guide",
+      bio: "A Kichwa native of Archidona, in Napo Province, upper Amazonian Ecuador. A skilled jungle guide and wilderness survival expert with a keen eye for wildlife and birds, and an avid storyteller who recounts the myths and legends of his people with absolute fluidity. Known as Iji, \u201cGrasshopper\u201d. Founder of the Ungi Ethnobotanical gardens outside Tena, where he and his family have produced and distributed medicinal plants and fruit trees since 1995.",
+    },
+    {
+      name: "Walter Grefa",
+      role: "Kichwa chef \u00b7 Rainforest guide",
+      bio: "A Kichwa native of Archidona, in Amazonian Ecuador. A skilled chef who creates remarkable dishes from the foods he gathers in the forest, with over a decade cooking at Amazonian lodges \u2014 and a highly skilled rainforest guide.",
+    },
+    {
+      name: "Gerard Artesona",
+      role: "Integration therapist",
+      bio: "A psychotherapist specialising in integration therapy and counselling, with a private practice in Oakland, California. His experience serving the mental-health needs of patients in hospital settings, alongside a therapeutic approach that bridges Western psychology and entheogenic ritual and practice, supports people on their healing journeys. He has taught yoga and mindfulness, primarily with transitional-age youth and formerly gang-involved inmates, and has embraced the healing potential of plant medicines for over ten years.",
+    },
+    {
+      name: "Rosie Peacock",
+      role: "Psychedelic integration coach",
+      bio: "A Psychedelic Integration Coach, Positive Psychologist and Coaching Psychologist (MSc), and a yoga and meditation teacher from the UK. Her work in wellbeing and psychedelics has been featured in OK! Magazine, The Metro, Planet Mindful, Thrive Global and elsewhere.",
+    },
+  ] as { name: string; role: string; bio: string }[],
+};
+
+export const founder = {
+  eyebrow: "The Guide",
+  name: "Jonathon “Sparrow” Miller Weisberger",
+  role: "Ethnobotanist · Author · Facilitator",
+  body: [
+    "Jonathon has spent more than twenty-seven years immersed in studying and applying the wisdom of time-tested world-heritage traditions — working alongside Secoya and Siekopai elders since 1994, and on the Osa Peninsula since 2000.",
+    "He's the author of Rainforest Medicine, and takes great joy in facilitating experiential education: processes that help people meet these traditions with the respect they ask for, and find wellness and renewal on every level of their being.",
+  ],
+};
+
+export const testimonials = {
+  eyebrow: "Testimonials",
+  heading: "What past gatherings have felt like",
+  items: [
+    {
+      quote: "PLACEHOLDER — a testimonial from a past participant, to be supplied.",
+      name: "PLACEHOLDER — name",
+      gathering: "PLACEHOLDER — gathering attended",
+    },
+    {
+      quote: "PLACEHOLDER — a testimonial from a past participant, to be supplied.",
+      name: "PLACEHOLDER — name",
+      gathering: "PLACEHOLDER — gathering attended",
+    },
+    {
+      quote: "PLACEHOLDER — a testimonial from a past participant, to be supplied.",
+      name: "PLACEHOLDER — name",
+      gathering: "PLACEHOLDER — gathering attended",
+    },
+  ],
+};
+
 export const intentions = {
   eyebrow: "Intentions",
   heading: "Why we gather",
@@ -149,37 +227,66 @@ export const conservation = {
   cta: "See the conservation work",
 };
 
-export const founder = {
-  eyebrow: "The Guide",
-  name: "Jonathon “Sparrow” Miller Weisberger",
-  role: "Ethnobotanist · Author · Facilitator",
-  body: [
-    "Jonathon has spent more than twenty-seven years immersed in studying and applying the wisdom of time-tested world-heritage traditions — working alongside Secoya and Siekopai elders since 1994, and on the Osa Peninsula since 2000.",
-    "He's the author of Rainforest Medicine, and takes great joy in facilitating experiential education: processes that help people meet these traditions with the respect they ask for, and find wellness and renewal on every level of their being.",
-  ],
+export type Gathering = {
+  id: string;
+  title: string;
+  dates: string;
+  place: string;
+  price: string;
+  places: string;
+  includes: string[];
+  note?: string;
 };
 
 export const gatherings = {
   eyebrow: "Upcoming Gatherings",
-  heading: "Join us",
+  heading: "Two gatherings in 2027",
+  intro:
+    "Each gathering is limited to twelve people. Participation is by application — write to us and we will take you through the preparation.",
   upcoming: [
     {
-      title: "Where the Rainforest Meets the Sparkling Ocean",
-      dates: "July 3 – 13, 2026",
-      place: "Osa Peninsula, Costa Rica",
-      note: "A seven-day option runs July 3 – 10.",
+      id: "cicadas-2027",
+      title: "The Celestial Summer of the Cicadas",
+      dates: "January 24 – 31, 2027",
+      place: "Ocean Forest Ecolodge · Osa Peninsula, Costa Rica",
+      price: "$2,700",
+      places: "12 places",
+      includes: [
+        "PLACEHOLDER — what this includes, to be supplied by Jonathon",
+        "PLACEHOLDER — accommodation, meals, ceremonies, transfers?",
+        "PLACEHOLDER — what is not included",
+      ],
     },
     {
-      title: "Rainforest Medicine Gathering",
-      dates: "January 24 – 31, 2027",
+      id: "cocoterra-2027",
+      title: "Cocoterra Rainforest Camping",
+      dates: "February 2 – 7, 2027",
       place: "Osa Peninsula, Costa Rica",
-      note: "Winter gathering on the Osa.",
+      price: "$999",
+      places: "12 places",
+      includes: [
+        "PLACEHOLDER — what this includes, to be supplied by Jonathon",
+        "PLACEHOLDER — camping, meals, ceremonies?",
+        "PLACEHOLDER — what is not included",
+      ],
     },
+  ] as Gathering[],
+  cta: "Apply for this gathering",
+};
+
+export const apply = {
+  eyebrow: "Taking Part",
+  heading: "How to join",
+  steps: [
+    { n: "01", title: "Write to us", text: "Send the application below. Tell us who you are and what is calling you." },
+    { n: "02", title: "A conversation", text: "We speak with you directly. This is a mutual decision, not a checkout." },
+    { n: "03", title: "Your place is held", text: "Once accepted, we confirm your place and send the full preparation." },
+    { n: "04", title: "The dieta begins", text: "Preparation starts two weeks before you arrive. We walk it with you." },
   ],
-  contactHeading: "Begin with a conversation",
-  contactBody:
-    "There's no checkout and no public schedule. Every gathering starts with a conversation. Tell us who you are and what's calling you, and we'll share the current dates, the preparation, and how to take part.",
-  cta: "Write to us",
+  ageNote: "Participants must be 18 or over.",
+  healthNote:
+    "Some medical conditions and medications are not compatible with these ceremonies. The application asks about them, and the full preparation protocol is published openly on this site.",
+  cta: "Send an application",
 };
 
 export const footer = {

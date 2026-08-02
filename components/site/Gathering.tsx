@@ -50,13 +50,6 @@ export default function Gathering() {
               </Reveal>
             ))}
           </div>
-          <Reveal delay={0.3}>
-            <div className="mt-10 border-l-2 border-gold/40 pl-6">
-              <p className="font-display text-lg italic leading-relaxed text-cream/85">
-                {gathering.note}
-              </p>
-            </div>
-          </Reveal>
         </div>
       </div>
     </section>

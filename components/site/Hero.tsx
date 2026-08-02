@@ -138,6 +138,15 @@ export default function Hero() {
           {hero.subtitle}
         </motion.p>
 
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5, delay: 1.15, ease: EASE }}
+          className="mx-auto mt-6 max-w-xl text-pretty font-body text-sm font-light uppercase tracking-wide text-gold/85"
+        >
+          {hero.nextLabel} · {hero.nextLine}
+        </motion.p>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -145,7 +154,7 @@ export default function Hero() {
           className="mt-10 flex flex-col items-center justify-center gap-5 sm:flex-row sm:gap-7"
         >
           <a
-            href="#gatherings"
+            href={hero.ctaHref}
             className="group relative inline-flex items-center gap-3 rounded-full border border-gold/50 bg-night/30 px-8 py-3.5 font-body text-sm uppercase tracking-wide text-gold backdrop-blur-sm transition-all duration-500 hover:border-gold hover:bg-gold/10 hover:text-gold-bright"
           >
             {hero.cta}
@@ -153,10 +162,22 @@ export default function Hero() {
               →
             </span>
           </a>
-          <span className="font-body text-xs uppercase tracking-wide text-cream/45">
-            {site.location}
-          </span>
+          <a
+            href={hero.ctaHref}
+            className="font-body text-xs uppercase tracking-wide text-cream/60 underline-offset-4 transition-colors hover:text-gold hover:underline"
+          >
+            {hero.ctaSecondary}
+          </a>
         </motion.div>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5, delay: 1.5 }}
+          className="mt-6 font-body text-xs uppercase tracking-wide text-cream/45"
+        >
+          {site.location}
+        </motion.p>
       </motion.div>
 
       {/* scroll cue */}

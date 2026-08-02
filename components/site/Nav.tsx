@@ -61,10 +61,10 @@ export default function Nav() {
 
         <div className="flex items-center gap-3">
           <a
-            href="#gatherings"
+            href="#apply"
             className="hidden rounded-full border border-gold/40 px-5 py-2 font-body text-[0.78rem] uppercase tracking-wide text-gold transition-all duration-500 hover:border-gold hover:bg-gold/10 hover:text-gold-bright sm:inline-block"
           >
-            Participate
+            Apply
           </a>
           <button
             type="button"
@@ -117,11 +117,11 @@ export default function Nav() {
               ))}
               <li className="pt-3">
                 <a
-                  href="#gatherings"
+                  href="#apply"
                   onClick={() => setOpen(false)}
                   className="inline-block rounded-full border border-gold/40 px-6 py-2.5 font-body text-sm uppercase tracking-wide text-gold"
                 >
-                  Participate
+                  Apply
                 </a>
               </li>
             </ul>

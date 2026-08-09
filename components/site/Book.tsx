@@ -11,7 +11,7 @@ export default function Book() {
     >
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 bg-[radial-gradient(80%_60%_at_28%_50%,rgba(160,124,51,0.10),transparent_70%)]"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(80%_60%_at_28%_50%,var(--glow-gold-deep),transparent_70%)]"
       />
       <div className="mx-auto grid max-w-6xl items-center gap-16 px-6 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24">
         {/* the object */}
@@ -20,14 +20,14 @@ export default function Book() {
             {/* glow behind the book */}
             <div
               aria-hidden
-              className="absolute -inset-10 -z-10 rounded-full bg-[radial-gradient(closest-side,rgba(201,162,75,0.22),transparent)] blur-2xl"
+              className="absolute -inset-10 -z-10 rounded-full bg-[radial-gradient(closest-side,var(--glow-gold-strong),transparent)] blur-2xl"
             />
             {/* pedestal shadow */}
             <div
               aria-hidden
               className="absolute -bottom-6 left-1/2 -z-10 h-10 w-3/4 -translate-x-1/2 rounded-[50%] bg-night-900/90 blur-xl"
             />
-            <div className="w-[230px] -rotate-2 overflow-hidden rounded-[3px] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] ring-1 ring-white/10 transition-transform duration-700 ease-out group-hover:-translate-y-2 group-hover:rotate-0 sm:w-[290px]">
+            <div className="w-[230px] -rotate-2 overflow-hidden rounded-[3px] shadow-[0_30px_60px_-15px_var(--book-shadow)] ring-1 ring-[var(--book-ring)] transition-transform duration-700 ease-out group-hover:-translate-y-2 group-hover:rotate-0 sm:w-[290px]">
               <Photo
                 name="book-cover"
                 sizes="(max-width: 1024px) 60vw, 290px"

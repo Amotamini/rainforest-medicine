@@ -29,7 +29,7 @@ function Embers() {
       {seeds.map((s, i) => (
         <span
           key={i}
-          className="absolute bottom-[-10px] rounded-full bg-gold-bright/70 blur-[0.5px] animate-smoke"
+          className="absolute bottom-[-10px] rounded-full bg-[rgb(var(--on-image-gold-bright)/0.7)] blur-[0.5px] animate-smoke"
           style={{
             left: s.left,
             width: s.size,
@@ -76,21 +76,27 @@ export default function Hero() {
         />
       </motion.div>
 
-      {/* scrims — pull the canopy into night and seat the type */}
+      {/* Scrims — pull the canopy into night and seat the type.
+          These stay dark in both palettes: see the --hero-* block in globals.css.
+          Only the last stop of the vertical gradient uses the page ground token,
+          so the bottom edge dissolves into the page whichever palette is on. */}
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 bg-[radial-gradient(115%_85%_at_50%_34%,rgba(6,11,8,0.18)_0%,rgba(5,9,7,0.6)_50%,rgba(3,6,4,0.97)_100%)]"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(115%_85%_at_50%_34%,var(--hero-veil-1)_0%,var(--hero-veil-2)_50%,var(--hero-veil-3)_100%)]"
       />
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 bg-gradient-to-b from-night/75 via-night/25 to-night"
+        className="absolute inset-0 -z-10 bg-gradient-to-b from-[var(--hero-scrim-top)] via-[var(--hero-scrim-mid)] to-night"
       />
       {/* a unifying deep-green wash so the canopy reads as night, not noon */}
-      <div aria-hidden className="absolute inset-0 -z-10 bg-night-900/35 mix-blend-multiply" />
+      <div
+        aria-hidden
+        className="absolute inset-0 -z-10 bg-[var(--hero-wash)] mix-blend-multiply"
+      />
       {/* a low candle-glow rising from the bottom edge */}
       <div
         aria-hidden
-        className="absolute inset-x-0 bottom-0 -z-10 h-1/2 bg-[radial-gradient(60%_100%_at_50%_120%,rgba(197,116,47,0.28),transparent_70%)]"
+        className="absolute inset-x-0 bottom-0 -z-10 h-1/2 bg-[radial-gradient(60%_100%_at_50%_120%,var(--on-image-ember),transparent_70%)]"
       />
 
       <Embers />
@@ -103,13 +109,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16, filter: "blur(6px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 1.4, delay: 0.3, ease: EASE }}
-          className="eyebrow justify-center text-gold/90"
+          className="eyebrow justify-center text-[rgb(var(--on-image-gold)/0.9)]"
         >
           {hero.eyebrow}
         </motion.p>
 
         <motion.h1
-          className="mt-7 font-display text-[3.1rem] font-light leading-[0.95] text-cream sm:text-7xl lg:text-[5.7rem]"
+          className="mt-7 font-display text-[3.1rem] font-light leading-[0.95] text-[rgb(var(--on-image))] sm:text-7xl lg:text-[5.7rem]"
         >
           <motion.span
             className="block"
@@ -120,7 +126,7 @@ export default function Hero() {
             Rainforest Medicine
           </motion.span>
           <motion.span
-            className="mt-1 block italic font-light text-gold-bright"
+            className="mt-1 block italic font-light text-[rgb(var(--on-image-gold-bright))]"
             initial={{ opacity: 0, y: 28, filter: "blur(10px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 1.6, delay: 0.72, ease: EASE }}
@@ -133,7 +139,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, delay: 1.0, ease: EASE }}
-          className="mx-auto mt-8 max-w-xl text-pretty font-body text-base font-light leading-relaxed text-cream/80 sm:text-lg"
+          className="mx-auto mt-8 max-w-xl text-pretty font-body text-base font-light leading-relaxed text-[rgb(var(--on-image)/0.8)] sm:text-lg"
         >
           {hero.subtitle}
         </motion.p>
@@ -142,7 +148,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, delay: 1.15, ease: EASE }}
-          className="mx-auto mt-6 max-w-xl text-pretty font-body text-sm font-light uppercase tracking-wide text-gold/85"
+          className="mx-auto mt-6 max-w-xl text-pretty font-body text-sm font-light uppercase tracking-wide text-[rgb(var(--on-image-gold)/0.85)]"
         >
           {hero.nextLabel} · {hero.nextLine}
         </motion.p>
@@ -155,18 +161,12 @@ export default function Hero() {
         >
           <a
             href={hero.ctaHref}
-            className="group relative inline-flex items-center gap-3 rounded-full border border-gold/50 bg-night/30 px-8 py-3.5 font-body text-sm uppercase tracking-wide text-gold backdrop-blur-sm transition-all duration-500 hover:border-gold hover:bg-gold/10 hover:text-gold-bright"
+            className="group relative inline-flex items-center gap-3 rounded-full border border-[rgb(var(--on-image-gold)/0.5)] bg-[var(--hero-cta-bg)] px-8 py-3.5 font-body text-sm uppercase tracking-wide text-[rgb(var(--on-image-gold))] backdrop-blur-sm transition-all duration-500 hover:border-[rgb(var(--on-image-gold))] hover:bg-[rgb(var(--on-image-gold)/0.1)] hover:text-[rgb(var(--on-image-gold-bright))]"
           >
             {hero.cta}
             <span className="transition-transform duration-500 group-hover:translate-x-1">
               →
             </span>
-          </a>
-          <a
-            href={hero.ctaHref}
-            className="font-body text-xs uppercase tracking-wide text-cream/60 underline-offset-4 transition-colors hover:text-gold hover:underline"
-          >
-            {hero.ctaSecondary}
           </a>
         </motion.div>
 
@@ -174,7 +174,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5, delay: 1.5 }}
-          className="mt-6 font-body text-xs uppercase tracking-wide text-cream/45"
+          className="mt-6 font-body text-xs uppercase tracking-wide text-[rgb(var(--on-image)/0.45)]"
         >
           {site.location}
         </motion.p>
@@ -187,12 +187,12 @@ export default function Hero() {
         transition={{ duration: 1.5, delay: 1.8 }}
         className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-3"
       >
-        <span className="font-body text-[0.62rem] uppercase tracking-eyebrow text-cream/40">
+        <span className="font-body text-[0.62rem] uppercase tracking-eyebrow text-[rgb(var(--on-image)/0.4)]">
           Enter
         </span>
-        <span className="relative h-12 w-px overflow-hidden bg-cream/15">
+        <span className="relative h-12 w-px overflow-hidden bg-[rgb(var(--on-image)/0.15)]">
           <motion.span
-            className="absolute inset-x-0 top-0 h-4 bg-gold"
+            className="absolute inset-x-0 top-0 h-4 bg-[rgb(var(--on-image-gold))]"
             animate={{ y: ["-100%", "300%"] }}
             transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
           />

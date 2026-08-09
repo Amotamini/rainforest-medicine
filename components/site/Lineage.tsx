@@ -59,7 +59,8 @@ export default function Lineage() {
               </div>
               <figcaption className="mt-4 flex items-start gap-3 font-body text-sm text-cream/55">
                 <span aria-hidden className="mt-2 h-px w-6 shrink-0 bg-gold/50" />
-                A Secoya elder, torchbearer of the tradition, with Jonathon Miller Weisberger.
+                A Secoya elder, torchbearer of the tradition, with Jonathon Miller Weisberger,
+                photographed in the years of their work together.
               </figcaption>
             </figure>
           </Reveal>

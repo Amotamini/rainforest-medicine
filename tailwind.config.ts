@@ -5,6 +5,15 @@ import type { Config } from "tailwindcss";
  * Near-black forest greens as the base, candlelit gold/amber emerging from
  * shadow. Every value is tuned so processed photographs and type-only
  * sections read as one nocturnal world.
+ *
+ * TEMPORARY, 2026-08-09. Every colour now reads from a CSS variable declared in
+ * `app/globals.css`, so the whole site can flip between the night palette and a
+ * daylight one without touching a single component. This exists only so the
+ * client can see both and choose. Once the choice is made, inline the winning
+ * values back into this file as plain hex, delete the losing block from
+ * globals.css, and delete `components/site/ThemeToggle.tsx`. Names below are
+ * unchanged on purpose: `night` is the page ground and `cream` is the text,
+ * whichever theme is showing.
  */
 const config: Config = {
   content: [
@@ -15,38 +24,38 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Base — the forest floor at night
+        // Base — the ground the page sits on
         night: {
-          DEFAULT: "#070b08", // deepest near-black green
-          900: "#070b08",
-          800: "#0a110c",
-          700: "#0e1812",
-          600: "#13201a",
-          500: "#192a22",
+          DEFAULT: "rgb(var(--c-night-900) / <alpha-value>)",
+          900: "rgb(var(--c-night-900) / <alpha-value>)",
+          800: "rgb(var(--c-night-800) / <alpha-value>)",
+          700: "rgb(var(--c-night-700) / <alpha-value>)",
+          600: "rgb(var(--c-night-600) / <alpha-value>)",
+          500: "rgb(var(--c-night-500) / <alpha-value>)",
         },
         // Living greens
         moss: {
-          DEFAULT: "#3a5440",
-          light: "#6f8a6c",
-          deep: "#243a2b",
+          DEFAULT: "rgb(var(--c-moss) / <alpha-value>)",
+          light: "rgb(var(--c-moss-light) / <alpha-value>)",
+          deep: "rgb(var(--c-moss-deep) / <alpha-value>)",
         },
         // Candlelight — gold / amber / ember
         gold: {
-          DEFAULT: "#c9a24b",
-          bright: "#e6c578",
-          deep: "#a07c33",
-          pale: "#e9dcb8",
+          DEFAULT: "rgb(var(--c-gold) / <alpha-value>)",
+          bright: "rgb(var(--c-gold-bright) / <alpha-value>)",
+          deep: "rgb(var(--c-gold-deep) / <alpha-value>)",
+          pale: "rgb(var(--c-gold-pale) / <alpha-value>)",
         },
         ember: {
-          DEFAULT: "#c5743a",
-          deep: "#8f4a22",
+          DEFAULT: "rgb(var(--c-ember) / <alpha-value>)",
+          deep: "rgb(var(--c-ember-deep) / <alpha-value>)",
         },
-        // Text — candlelit cream / sage
+        // Text
         cream: {
-          DEFAULT: "#ece3cf",
-          dim: "#cabfa6",
+          DEFAULT: "rgb(var(--c-cream) / <alpha-value>)",
+          dim: "rgb(var(--c-cream-dim) / <alpha-value>)",
         },
-        sage: "#9aa896",
+        sage: "rgb(var(--c-sage) / <alpha-value>)",
       },
       fontFamily: {
         display: ["var(--font-display)", "Cormorant Garamond", "serif"],
@@ -86,7 +95,7 @@ const config: Config = {
       },
       backgroundImage: {
         "gold-rule":
-          "linear-gradient(90deg, transparent, rgba(201,162,75,0.55), transparent)",
+          "linear-gradient(90deg, transparent, var(--rule), transparent)",
       },
     },
   },

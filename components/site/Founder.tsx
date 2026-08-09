@@ -5,14 +5,14 @@ import { founder } from "@/lib/content";
 
 export default function Founder() {
   return (
-    <section className="relative py-24 sm:py-32">
+    <section id="founder" className="relative py-24 sm:py-32">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
         {/* portrait */}
         <Reveal className="mx-auto w-full max-w-sm lg:mx-0">
           <div className="group relative">
             <div
               aria-hidden
-              className="absolute -inset-6 -z-10 rounded-full bg-[radial-gradient(closest-side,rgba(201,162,75,0.14),transparent)] blur-2xl"
+              className="absolute -inset-6 -z-10 rounded-full bg-[radial-gradient(closest-side,var(--glow-gold),transparent)] blur-2xl"
             />
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm ring-1 ring-gold/20">
               <Photo

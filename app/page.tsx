@@ -44,6 +44,29 @@ const jsonLd = {
     },
     {
       "@type": "Event",
+      name: "Napo-Galeras Wilderness Expedition",
+      startDate: "2026-11-22",
+      endDate: "2026-11-30",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      location: {
+        "@type": "Place",
+        name: "Napo-Galeras National Park",
+        address: {
+          "@type": "PostalAddress",
+          addressRegion: "Napo Province",
+          addressCountry: "Ecuador",
+        },
+      },
+      offers: {
+        "@type": "Offer",
+        price: "2700",
+        priceCurrency: "USD",
+        url: "https://www.wetravel.com/trips/nov-22-30-2026-ecuador-upper-amazon-wilderness-immersion-ocean-forest-ecolodge-70966045",
+      },
+      maximumAttendeeCapacity: 12,
+    },
+    {
+      "@type": "Event",
       name: "The Celestial Summer of the Cicadas",
       startDate: "2027-01-24",
       endDate: "2027-01-31",
@@ -61,7 +84,9 @@ const jsonLd = {
         "@type": "Offer",
         price: "2700",
         priceCurrency: "USD",
+        url: "https://www.wetravel.com/trips/jan-24-31-2027-costa-rica-rainforest-retreat-ocean-forest-ecolodge-9423952809",
       },
+      maximumAttendeeCapacity: 12,
     },
     {
       "@type": "Event",
@@ -71,7 +96,7 @@ const jsonLd = {
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       location: {
         "@type": "Place",
-        name: "Ocean Forest Ecolodge",
+        name: "Cocoterra Rainforest Permaculture Project",
         address: {
           "@type": "PostalAddress",
           addressRegion: "Osa Peninsula",
@@ -82,7 +107,9 @@ const jsonLd = {
         "@type": "Offer",
         price: "999",
         priceCurrency: "USD",
+        url: "https://www.wetravel.com/trips/costa-rica-feb-2-7-2026-at-the-cocoterra-ocean-forest-ecolodge-2965444516",
       },
+      maximumAttendeeCapacity: 12,
     },
   ],
 };

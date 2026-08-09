@@ -2,7 +2,6 @@ import Reveal from "@/components/ui/Reveal";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Photo from "@/components/ui/Photo";
 import { gatherings } from "@/lib/content";
-import { applyMailto } from "@/lib/apply";
 
 export default function Upcoming() {
   return (
@@ -17,10 +16,10 @@ export default function Upcoming() {
           className="object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-night via-night/85 to-night" />
-        <div className="absolute inset-0 bg-[radial-gradient(110%_80%_at_50%_40%,transparent,rgba(5,9,7,0.7))]" />
+        <div className="absolute inset-0 bg-[radial-gradient(110%_80%_at_50%_40%,transparent,var(--veil))]" />
       </div>
 
-      <div className="mx-auto max-w-5xl px-6 sm:px-8">
+      <div className="mx-auto max-w-6xl px-6 sm:px-8">
         <div className="text-center">
           <Reveal>
             <Eyebrow className="justify-center">{gatherings.eyebrow}</Eyebrow>
@@ -37,7 +36,7 @@ export default function Upcoming() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {gatherings.upcoming.map((g, i) => (
             <Reveal key={g.id} delay={0.1 * i}>
               <article className="group flex h-full flex-col rounded-sm border border-gold/20 bg-night-800/60 p-8 backdrop-blur-sm transition-all duration-700 hover:border-gold/50 hover:bg-night-800/85">
@@ -58,27 +57,69 @@ export default function Upcoming() {
                     {g.places}
                   </span>
                 </div>
+                <p className="mt-2 font-body text-xs uppercase tracking-wide text-cream/45">
+                  {g.deposit}
+                </p>
 
-                <ul className="mt-6 space-y-2">
-                  {g.includes.map((line, idx) => (
-                    <li
-                      key={idx}
-                      className="rounded-sm border border-dashed border-gold/25 px-3 py-2 font-body text-sm italic leading-relaxed text-cream/45"
-                    >
-                      {line}
-                    </li>
-                  ))}
-                </ul>
+                <div className="mt-7">
+                  <h4 className="font-body text-xs uppercase tracking-[0.18em] text-gold/70">
+                    Ceremony
+                  </h4>
+                  <ul className="mt-3 space-y-2">
+                    {g.ceremonies.map((line, idx) => (
+                      <li
+                        key={idx}
+                        className="font-body text-sm font-light leading-relaxed text-cream/85"
+                      >
+                        {line}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mt-7">
+                  <h4 className="font-body text-xs uppercase tracking-[0.18em] text-gold/70">
+                    Included
+                  </h4>
+                  <ul className="mt-3 space-y-2">
+                    {g.includes.map((line, idx) => (
+                      <li
+                        key={idx}
+                        className="font-body text-sm font-light leading-relaxed text-cream/70"
+                      >
+                        {line}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mt-7">
+                  <h4 className="font-body text-xs uppercase tracking-[0.18em] text-cream/40">
+                    Not included
+                  </h4>
+                  <ul className="mt-3 space-y-2">
+                    {g.notIncluded.map((line, idx) => (
+                      <li
+                        key={idx}
+                        className="font-body text-sm font-light leading-relaxed text-cream/50"
+                      >
+                        {line}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
                 {g.note && (
-                  <p className="mt-4 font-body text-sm font-light italic text-cream/60">
+                  <p className="mt-6 text-pretty font-body text-sm font-light italic leading-relaxed text-cream/60">
                     {g.note}
                   </p>
                 )}
 
                 <div className="mt-auto pt-8">
                   <a
-                    href={applyMailto(g.title)}
+                    href={g.bookUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group/btn inline-flex items-center gap-3 rounded-full bg-gold px-7 py-3 font-body text-sm font-medium uppercase tracking-wide text-night-900 transition-all duration-500 hover:bg-gold-bright"
                   >
                     {gatherings.cta}
@@ -86,6 +127,7 @@ export default function Upcoming() {
                       →
                     </span>
                   </a>
+                  <p className="mt-3 font-body text-xs text-cream/40">{gatherings.ctaNote}</p>
                 </div>
               </article>
             </Reveal>

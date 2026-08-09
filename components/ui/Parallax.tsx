@@ -25,7 +25,18 @@ export default function Parallax({ children, className, distance = 80 }: Paralla
 
   return (
     <div ref={ref} className={className}>
-      <motion.div style={reduce ? undefined : { y }} className="h-full w-full">
+      {/*
+        `relative` matters here. This div is the direct parent of the `fill`
+        images that get parallaxed, and a fill image measures itself against
+        its nearest positioned ancestor. Without it Next logs
+        'has "fill" and parent element with invalid "position"' and the image
+        sizes against the wrong box. It also gives framer-motion's useScroll a
+        non-static container to measure the scroll offset against.
+      */}
+      <motion.div
+        style={reduce ? undefined : { y }}
+        className="relative h-full w-full"
+      >
         {children}
       </motion.div>
     </div>

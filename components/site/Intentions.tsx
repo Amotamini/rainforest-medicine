@@ -5,7 +5,7 @@ import { intentions } from "@/lib/content";
 
 export default function Intentions() {
   return (
-    <section className="relative overflow-hidden py-28 sm:py-40">
+    <section id="intentions" className="relative overflow-hidden py-28 sm:py-40">
       {/* darkened sunset as ground */}
       <div aria-hidden className="absolute inset-0 -z-10">
         <Photo
@@ -16,7 +16,7 @@ export default function Intentions() {
           className="object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-night via-night/80 to-night" />
-        <div className="absolute inset-0 bg-[radial-gradient(120%_80%_at_50%_50%,transparent,rgba(5,9,7,0.7))]" />
+        <div className="absolute inset-0 bg-[radial-gradient(120%_80%_at_50%_50%,transparent,var(--veil))]" />
       </div>
 
       <div className="mx-auto max-w-5xl px-6 sm:px-8">

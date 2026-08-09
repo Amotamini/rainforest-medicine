@@ -7,7 +7,7 @@ const NUMERALS = ["I", "II", "III"];
 
 export default function Conservation() {
   return (
-    <section className="relative overflow-hidden py-24 sm:py-32">
+    <section id="conservation" className="relative overflow-hidden py-24 sm:py-32">
       <div aria-hidden className="absolute inset-0 -z-10">
         <Photo
           name="sunset2"

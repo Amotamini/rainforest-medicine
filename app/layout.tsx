@@ -46,7 +46,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable}`}>
+    <html lang="en" data-theme="night" className={`${display.variable} ${body.variable}`}>
+      <head>
+        {/*
+          TEMPORARY, 2026-08-09 — paired with components/site/ThemeToggle.tsx.
+          Applies the saved palette before first paint so the page never flashes
+          the wrong one. Delete this whole block when the palette is chosen.
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var t=localStorage.getItem('rfm-theme');if(t==='day'||t==='night'){document.documentElement.dataset.theme=t}}catch(e){}`,
+          }}
+        />
+      </head>
       <body className="relative min-h-screen selection:bg-gold/20">
         {children}
         {/* Redline client review widget. Inert unless the URL carries ?review=TOKEN. */}

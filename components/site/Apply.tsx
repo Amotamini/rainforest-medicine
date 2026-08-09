@@ -8,7 +8,7 @@ export default function Apply() {
     <section id="apply" className="relative overflow-hidden py-28 sm:py-36">
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 bg-[radial-gradient(70%_60%_at_50%_0%,rgba(160,124,51,0.10),transparent_70%)]"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(70%_60%_at_50%_0%,var(--glow-gold-deep),transparent_70%)]"
       />
 
       <div className="mx-auto max-w-5xl px-6 sm:px-8">
@@ -49,7 +49,7 @@ export default function Apply() {
               {apply.healthNote}
             </p>
             <a
-              href={applyMailto()}
+              href={apply.ctaHref}
               className="group mt-10 inline-flex items-center gap-3 rounded-full bg-gold px-9 py-4 font-body text-sm font-medium uppercase tracking-wide text-night-900 transition-all duration-500 hover:bg-gold-bright"
             >
               {apply.cta}
@@ -57,7 +57,15 @@ export default function Apply() {
                 →
               </span>
             </a>
-            <p className="mt-6 font-body text-sm text-cream/50">{site.email}</p>
+            <p className="mt-8">
+              <a
+                href={applyMailto()}
+                className="font-body text-sm text-cream/60 underline decoration-gold/40 underline-offset-4 transition-colors duration-500 hover:text-cream"
+              >
+                {apply.secondaryCta}
+              </a>
+            </p>
+            <p className="mt-3 font-body text-sm text-cream/40">{site.email}</p>
           </div>
         </Reveal>
       </div>

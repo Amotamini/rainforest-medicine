@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="relative overflow-hidden border-t border-gold/10 bg-night-900 py-20">
       <div
         aria-hidden
-        className="absolute inset-x-0 top-0 -z-10 h-40 bg-[radial-gradient(60%_100%_at_50%_0%,rgba(197,116,47,0.12),transparent)]"
+        className="absolute inset-x-0 top-0 -z-10 h-40 bg-[radial-gradient(60%_100%_at_50%_0%,var(--glow-ember-soft),transparent)]"
       />
       <div className="mx-auto max-w-5xl px-6 text-center sm:px-8">
         <Reveal>

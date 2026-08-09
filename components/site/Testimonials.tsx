@@ -17,17 +17,22 @@ export default function Testimonials() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-14 grid gap-6 md:grid-cols-2">
           {testimonials.items.map((t, i) => (
-            <Reveal key={i} delay={0.1 * i}>
-              <article className="flex h-full flex-col rounded-sm border border-dashed border-gold/25 bg-night-800/40 p-7">
-                <p className="font-display text-lg italic leading-relaxed text-cream/45">
+            <Reveal key={i} delay={0.08 * i}>
+              <article className="flex h-full flex-col rounded-sm border border-gold/20 bg-night-800/50 p-7 sm:p-8">
+                <p className="text-pretty font-display text-lg font-light italic leading-relaxed text-cream/85">
                   “{t.quote}”
                 </p>
-                <p className="mt-6 font-body text-sm italic text-cream/40">{t.name}</p>
-                <p className="mt-1 font-body text-xs uppercase tracking-wide italic text-cream/30">
-                  {t.gathering}
-                </p>
+                <div className="mt-auto pt-6">
+                  <div aria-hidden className="gold-rule-left w-10" />
+                  <p className="mt-4 font-body text-sm text-cream/75">{t.name}</p>
+                  {t.role && (
+                    <p className="mt-1 font-body text-xs uppercase tracking-wide text-cream/45">
+                      {t.role}
+                    </p>
+                  )}
+                </div>
               </article>
             </Reveal>
           ))}

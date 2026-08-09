@@ -2,13 +2,14 @@ import { site } from "./content";
 
 export function applyMailto(gatheringTitle?: string) {
   const subject = gatheringTitle
-    ? `Application — ${gatheringTitle}`
-    : "Application — Rainforest Medicine Gathering";
+    ? `Before I book — ${gatheringTitle}`
+    : "Before I book — Rainforest Medicine Gathering";
   const body = [
+    "Booking is handled on WeTravel. This is for anything you want to raise with us first.",
     "Please answer as fully as you can. Everything here is held in confidence.",
     "",
     "Full name:",
-    "Age (participants must be 18 or over):",
+    "Age (under 18s take part accompanied by a parent or guardian):",
     "Country / city:",
     "Which gathering: " + (gatheringTitle ?? ""),
     "",

@@ -75,13 +75,13 @@ const PHOTOS = {
   "cacao": { section: "plants", alt: "Sacred plants and cacao prepared by hand for ceremony" },
   "san-josecito-bay": { section: "setting", alt: "Aerial view of San Josecito Bay on the Osa Peninsula, Costa Rica" },
   "beach": { section: "setting", alt: "The wild Pacific shoreline where the Osa rainforest meets the sea" },
-  "lodge": { section: "setting", alt: "Open-air common space of the Ocean Forest Ecolodge hung with prayer flags" },
+  "lodge": { section: "setting", alt: "Hammocks strung under the old tarpaulin shelter" },
   "hammock": { section: "setting", alt: "Hammocks on a wooden deck overlooking the rainforest" },
   "room3": { section: "setting", alt: "A simple, light-filled guest room opening onto the jungle" },
   "goddess-jacuzzi": { section: "setting", alt: "A natural stone pool fed by a forest spring" },
   "sunset1": { section: "intentions", alt: "A vivid sunset over the Pacific off the Osa Peninsula" },
   "sunset2": { section: "initiatives", alt: "Dusk light over the ocean and distant islands" },
-  "jonathon-portrait": { section: "founder", alt: "Portrait of ethnobotanist and author Jonathon Sparrow Miller Weisberger" },
+  "jonathon-portrait": { section: "founder", alt: "Portrait of ethnobotanist and author Jonathon Miller Weisberger" },
 };
 
 // The book cover is an object, not a scene — keep it legible with a far

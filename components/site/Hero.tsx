@@ -123,7 +123,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 1.6, delay: 0.5, ease: EASE }}
           >
-            Rainforest Medicine
+            Rainforest Medicine Council
           </motion.span>
           <motion.span
             className="mt-1 block italic font-light text-[rgb(var(--on-image-gold-bright))]"

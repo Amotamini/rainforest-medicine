@@ -87,7 +87,11 @@ export default function Setting() {
             <Tile name="beach" className="aspect-[16/10]" sizes="(max-width: 1024px) 100vw, 42vw" />
           </Reveal>
           <Reveal delay={0.04} className="col-span-1 lg:col-span-3">
-            <Tile name="lodge" className="aspect-[3/4]" sizes="(max-width: 1024px) 50vw, 25vw" />
+            <div className="flex aspect-[3/4] items-center justify-center rounded-sm border border-dashed border-gold/30 bg-night-800/40 p-6">
+              <p className="text-pretty text-center font-body text-sm font-light italic leading-relaxed text-cream/45">
+                A current photograph of the ceremonial lodge, to come
+              </p>
+            </div>
           </Reveal>
           <Reveal delay={0.1} className="col-span-1 lg:col-span-3">
             <Tile name="room3" className="aspect-[3/4]" sizes="(max-width: 1024px) 50vw, 25vw" />

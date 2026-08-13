@@ -29,7 +29,7 @@ const jsonLd = {
         "Experiential ceremonial gatherings for personal, community and planetary renewal, held in the living plant-medicine traditions of the upper Amazon.",
       founder: {
         "@type": "Person",
-        name: "Jonathon Sparrow Miller Weisberger",
+        name: "Jonathon Miller Weisberger",
         jobTitle: "Ethnobotanist & Author",
       },
       location: {

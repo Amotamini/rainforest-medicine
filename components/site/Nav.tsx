@@ -108,7 +108,7 @@ export default function Nav() {
           <span
             className={`eyebrow mt-1 text-[0.58rem] transition-colors duration-700 ${tone.logoSub}`}
           >
-            Gatherings
+            Council Gatherings
           </span>
         </a>
 

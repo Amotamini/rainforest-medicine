@@ -6,15 +6,15 @@
  */
 
 export const site = {
-  name: "Rainforest Medicine Gatherings",
-  fullName: "Rainforest Medicine Gatherings",
+  name: "Rainforest Medicine Council Gatherings",
+  fullName: "Rainforest Medicine Council Gatherings",
   email: "info@rainforestmedicine.net",
-  location: "Ocean Forest Ecolodge · Osa Peninsula, Costa Rica",
+  location: "Osa Peninsula, Costa Rica & The Ecuadorian Upper Amazon",
   amazonUrl:
     "https://www.amazon.com/Rainforest-Medicine-Preserving-Indigenous-Biodiversity/dp/158394608X",
   yageDrinkerPdf:
     "https://rainforestmedicine.net/wp-content/uploads/2018/11/The-Yage-Drinker.pdf",
-  conservationUrl: "https://www.4biodiversity.org/",
+  conservationUrl: "https://www.livingbridgesfoundation.org/",
   /**
    * REMOVED FROM THE FOOTER 2026-08-09. guayusatea.com is no longer theirs — it
    * is parked on HugeDomains with a "this domain is for sale" page. Linking it
@@ -52,9 +52,9 @@ export const nav = [
 
 export const hero = {
   eyebrow: "The Upper Amazon, Ecuador · Osa Peninsula, Costa Rica",
-  title: "Rainforest Medicine Gatherings",
+  title: "Rainforest Medicine Council Gatherings",
   subtitle:
-    "Experiential ceremonial gatherings for personal, community and planetary renewal — held in the living plant-medicine traditions of the upper Amazon.",
+    "Immersive, experiential workshop gatherings for personal, community, and planetary renewal and wellbeing — held in accordance with the time-tested world heritage plant medicine lineage tradition of Our Creators Multicolored People, from the Upper Amazon.",
   nextLabel: "Next gathering",
   nextLine: "Napo-Galeras Wilderness Expedition · November 22 – 30, 2026 · Napo Province, Ecuador",
   cta: "Reserve your place",
@@ -96,7 +96,7 @@ export const book = {
   eyebrow: "The Book",
   title: "Rainforest Medicine",
   subtitle: "Preserving Indigenous Science and Biodiversity in the Upper Amazon",
-  author: "by Jonathon Sparrow Miller Weisberger",
+  author: "by Jonathon Miller Weisberger",
   body: [
     "Chronicling the practices, legends and wisdom of the vanishing traditions of the upper Amazon, this book reveals the region's Indigenous approach to living in harmony with the natural world — with in-depth essays on plant-based medicine and Indigenous science from four distinct Amazonian societies: deep-forest and urban, lowland rainforest and mountain.",
     "It's illustrated with botanical and cultural drawings by Secoya elder and traditional healer Agustín Payaguaje and by the author, and includes previously unpublished paintings by Pablo César Amaringo (1938–2009), the acclaimed Peruvian visionary artist renowned for his depictions of the world seen through ayahuasca.",
@@ -150,11 +150,6 @@ export const teachers = {
       bio: "On the plant-medicine path and a supporter of Jonathon's work since they became friends in 1993. A practitioner of Hawaiian cultural and spiritual traditions, knowledgeable in the medicinal and other uses of tropical plants, and a dedicated community organiser around food security, ocean management and land conservation. Scott serves the Rainforest Medicine Councils as a group facilitator \u2014 holding communication and scheduling, leading activities, meeting participants' needs, and helping in the ceremonies.",
     },
     {
-      name: "Bern Wisenberg",
-      role: "Group facilitator",
-      bio: "A peacemaker and energy guide in service of life. Bern joins gatherings as a people person and a facilitator, helping participants unpack and integrate the experience. He has long been drawn to the transcendental experience and its role in society.",
-    },
-    {
       name: "Benjamin Mamallacta",
       role: "Kichwa storyteller \u00b7 Rainforest guide",
       bio: "A Kichwa native of Archidona, in Napo Province, upper Amazonian Ecuador. A skilled jungle guide and wilderness survival expert with a keen eye for wildlife and birds, and an avid storyteller who recounts the myths and legends of his people with absolute fluidity. Known as Iji, \u201cGrasshopper\u201d. Founder of the Ungi Ethnobotanical gardens outside Tena, where he and his family have produced and distributed medicinal plants and fruit trees since 1995.",
@@ -164,26 +159,16 @@ export const teachers = {
       role: "Kichwa chef \u00b7 Rainforest guide",
       bio: "A Kichwa native of Archidona, in Amazonian Ecuador. A skilled chef who creates remarkable dishes from the foods he gathers in the forest, with over a decade cooking at Amazonian lodges \u2014 and a highly skilled rainforest guide.",
     },
-    {
-      name: "Gerard Artesona",
-      role: "Integration therapist",
-      bio: "A psychotherapist specialising in integration therapy and counselling, with a private practice in Oakland, California. His experience serving the mental-health needs of patients in hospital settings, alongside a therapeutic approach that bridges Western psychology and entheogenic ritual and practice, supports people on their healing journeys. He has taught yoga and mindfulness, primarily with transitional-age youth and formerly gang-involved inmates, and has embraced the healing potential of plant medicines for over ten years.",
-    },
-    {
-      name: "Rosie Peacock",
-      role: "Psychedelic integration coach",
-      bio: "A Psychedelic Integration Coach, Positive Psychologist and Coaching Psychologist (MSc), and a yoga and meditation teacher from the UK. Her work in wellbeing and psychedelics has been featured in OK! Magazine, The Metro, Planet Mindful, Thrive Global and elsewhere.",
-    },
   ] as { name: string; role: string; bio: string }[],
 };
 
 export const founder = {
   eyebrow: "The Guide",
-  name: "Jonathon “Sparrow” Miller Weisberger",
+  name: "Jonathon Miller Weisberger",
   role: "Ethnobotanist · Author · Facilitator",
   body: [
-    "Jonathon has spent more than twenty-seven years immersed in studying and applying the wisdom of time-tested world-heritage traditions — working alongside Secoya and Siekopai elders since 1994, and on the Osa Peninsula since 2000.",
-    "He's the author of Rainforest Medicine, and takes great joy in facilitating experiential education: processes that help people meet these traditions with the respect they ask for, and find wellness and renewal on every level of their being.",
+    "Ethnobotanist Jonathon Miller Weisberger has spent nearly three decades immersed in the study and application of time-tested world-heritage traditions, rainforest plant medicine, and holistic wellness. Since 1990, his ethnobotanical field studies have progressed alongside dedicated ground-level rainforest conservation and cultural heritage revalidation initiatives — among indigenous ethnic minorities in the upper Amazon, Waorani and Kichwa (1990–1995), Siekopai (1994–2010) contributing to the demarcation of Indigenous homelands and the establishment of biological reserves. And since the year 2000 with master herbalists on Costa Rica's Osa Peninsula. Beyond his work in the Amazon and Central America, Jonathon has also devoted his life to the study of The Integral Way of Tao, traditions such as Tai Chi, Qigong, I Ching and Traditional Chinese Medicine.",
+    "He is the author of Rainforest Medicine: Preserving Indigenous Science and Biodiversity in the Upper Amazon, written as an offering to ensure in-situ traditional wisdom accompanies sacred plants as they circulate the globe. Since 1996, he joyously organizes and facilitates bi-annual “Rainforest Medicine Council Gatherings,” experiential workshops, lectures, webinars, and ethnobotanical immersions focused on personal, community, and planetary renewal and wellbeing. Since 2000, Jonathon has served as the steward of the Ocean Forest Ecolodge on the Osa Peninsula.",
   ],
 };
 
@@ -211,7 +196,7 @@ export const testimonials = {
     },
     {
       quote:
-        "Aloha, my name is David Santander. I'm a Doctor of Traditional Chinese Medicine and acupuncturist. I've attended three council gatherings under the incredibly skilled and highly experienced supervision and facilitation of Jonathon Sparrow Miller Weisberger. I cannot understate how much these council gatherings have changed my life. It's one of the most efficient, effective, and magical forms of medicine that I've ever encountered. I truly appreciate and respect Jonathon's 30+ years of experience and expertise, and I'm really able to trust in the experience and ceremonial guardrails knowing how much experience he has. Jonathon has been very accommodating to everyone's individual needs, fears, and questions every time I go. Each ceremony feels like a lifetime of therapy. Each day spent at Ocean Forest Ecolodge and at the ceremony lodge is a blessing for your soul, spirit, and mind.",
+        "Aloha, my name is David Santander. I'm a Doctor of Traditional Chinese Medicine and acupuncturist. I've attended three council gatherings under the incredibly skilled and highly experienced supervision and facilitation of Jonathon Miller Weisberger. I cannot understate how much these council gatherings have changed my life. It's one of the most efficient, effective, and magical forms of medicine that I've ever encountered. I truly appreciate and respect Jonathon's 30+ years of experience and expertise, and I'm really able to trust in the experience and ceremonial guardrails knowing how much experience he has. Jonathon has been very accommodating to everyone's individual needs, fears, and questions every time I go. Each ceremony feels like a lifetime of therapy. Each day spent at Ocean Forest Ecolodge and at the ceremony lodge is a blessing for your soul, spirit, and mind.",
       name: "Dr David Santander",
       role: "Doctor of Traditional Chinese Medicine · Hawai'i",
     },
@@ -404,6 +389,6 @@ export const footer = {
   blessing: "May the forest, and the ones who've kept its wisdom, be honored.",
   links: [
     { label: "The Book", href: site.amazonUrl, external: true },
-    { label: "Conservation · 4biodiversity.org", href: site.conservationUrl, external: true },
+    { label: "Conservation · livingbridgesfoundation.org", href: site.conservationUrl, external: true },
   ],
 };

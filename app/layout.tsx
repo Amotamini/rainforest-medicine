@@ -6,8 +6,8 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://rainforestmedicine.net"),
   title: {
-    default: "Rainforest Medicine Gatherings — Ceremonial traditions of the upper Amazon",
-    template: "%s · Rainforest Medicine Gatherings",
+    default: "Rainforest Medicine Council Gatherings — Ceremonial traditions of the upper Amazon",
+    template: "%s · Rainforest Medicine Council Gatherings",
   },
   description:
     "Experiential ceremonial gatherings for personal, community and planetary renewal, held in the living plant-medicine traditions of the upper Amazon — at the Ocean Forest Ecolodge on Costa Rica's Osa Peninsula.",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Jonathon Miller Weisberger" }],
   openGraph: {
-    title: "Rainforest Medicine Gatherings",
+    title: "Rainforest Medicine Council Gatherings",
     description:
       "Ceremonial gatherings for personal, community and planetary renewal — held in the living traditions of the upper Amazon.",
     type: "website",
@@ -66,7 +66,7 @@ export default function RootLayout({
           defer
           src="https://redline-xi-ten.vercel.app/w.js"
           data-redline="rainforest-medicine"
-          data-redline-name="Rainforest Medicine Gatherings"
+          data-redline-name="Rainforest Medicine Council Gatherings"
         />
       </body>
     </html>

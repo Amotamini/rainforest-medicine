@@ -36,8 +36,8 @@ green-black vignette so each frame emerges from darkness, and fine film grain.
 
 There are two ways to run the grade and they produce the same result. Claude runs
 `python3 scripts/grade.py`, which needs only Pillow and numpy — no `npm install`, no
-network, nothing to set up on the machine it runs on, which is the point: Eli swaps a
-photograph by talking to Claude and never installs anything. Scott can still run
+network, nothing to set up on the machine it runs on, which is the point: Jonas swaps a
+photograph by talking to Claude and never installs anything. A developer can still run
 `npm run images`, which is `scripts/process-images.mjs` and needs `sharp`. Both read
 `public/images/raw/`, write `public/images/processed/` and rewrite
 `lib/image-manifest.json`. `scripts/grade.py` mirrors the same `GRADE` numbers, so a change
